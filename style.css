@@ -1,0 +1,116 @@
+* {
+  margin: 5px;
+  background-color: blueviolet;
+}
+
+.seta {
+  /* Tamaño */
+  height: 230px;
+  width: 300px;
+
+  /* Fondo y borde */
+  background-color: rgb(246, 0, 21);
+  border-radius: 50%;
+  box-shadow: -5px -5px 25px rgb(100, 0, 8) inset,
+    5px 5px 15px rgb(250, 62, 62) inset;
+
+  /* Posición */
+  position: relative;
+  overflow: hidden;
+}
+
+.circulo {
+  /* Tamaño */
+  height: 120px;
+  width: 120px;
+
+  /* Fondo y borde */
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgb(100, 0, 8), -5px -5px 15px rgb(250, 62, 62);
+
+  /* Posición */
+  position: absolute;
+  content: '';
+}
+
+#c1 {
+  top: 45px;
+  left: -60px;
+}
+
+#c2 {
+  top: 45px;
+  right: -60px;
+}
+
+#c3 {
+  top: 30px;
+  left: 85px;
+  height: 130px;
+  width: 130px;
+}
+
+.cara {
+  /* Tamaño */
+  height: 100px;
+  width: 166.67px;
+
+  /* Fondo y borde */
+  background-color: rgb(246, 218, 172);
+  border-radius: 50% 50% 50% 50% / 23% 23% 23% 23%;
+  box-shadow: -5px -5px 15px rgb(143, 104, 40) inset,
+    5px 5px 25px rgb(251, 233, 204) inset;
+
+  /* Posición */
+  position: absolute;
+  content: '';
+  left: 65px;
+  top: 175px;
+}
+
+.l {
+  /* Tamaño */
+  height: 80px;
+  width: 166.67px;
+
+  /* Posición */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: transparent;
+}
+
+.ojos {
+  /* Tamaño */
+  height: 45px;
+  width: 16px;
+
+  /* Fondo y borde */
+  background-color: black;
+  border-radius: 50%;
+
+  /* Posición */
+  position: relative;
+
+  &::before {
+    /* Tamaño */
+    height: 12px;
+    width: 3px;
+
+    /* Fondo y borde */
+    background-color: white;
+    border-radius: 30%;
+
+    /* Posición */
+    position: absolute;
+    content: '';
+    left: 6.6px;
+    top: 5px;
+  }
+}
+
+main {
+  background: transparent;
+  filter: drop-shadow(0px 0px 10px black);
+}
